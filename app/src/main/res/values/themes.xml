@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PetUiDes" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/light_colorPrimary</item>
+        <item name="colorOnPrimary">@color/light_colorOnPrimary</item>
+        <item name="colorPrimaryVariant">@color/light_colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/light_colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/light_colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/light_colorOnSecondary</item>
+        <item name="android:windowBackground">@color/light_windowBackground</item>
+        <item name="android:textColor">@color/light_textColor</item>
+        <item name="android:statusBarColor">@color/light_statusBarColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.PetUiDes" parent="Base.Theme.PetUiDes" />
+
+    <style name="Theme.PetUiDes.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.PetUiDes.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.PetUiDes.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="myToolbarTheme">
+        <item name="colorControlNormal">@color/light_textColor</item>
+    </style>
+
+
+
+</resources>

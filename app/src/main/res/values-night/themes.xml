@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PetUiDes" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/dark_colorPrimary</item>
+        <item name="colorOnPrimary">@color/dark_colorOnPrimary</item>
+        <item name="colorPrimaryVariant">@color/dark_colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/dark_colorSecondary</item>
+
+        <item name="colorSecondaryVariant">@color/dark_colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/dark_colorOnSecondary</item>
+        <item name="android:windowBackground">@color/dark_windowBackground</item>
+        <item name="android:textColor">@color/dark_textColor</item>
+        <item name="android:statusBarColor">@color/dark_statusBarColor</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="myToolbarTheme">
+        <item name="colorControlNormal">@color/dark_textColor</item>
+    </style>
+</resources>
