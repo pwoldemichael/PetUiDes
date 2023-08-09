@@ -27,6 +27,12 @@ fun dpToPx(dp : Int) : Float {
   return (dp * Resources.getSystem().displayMetrics.density)
 }
 
+fun View.Disable(){
+  this.isEnabled = false
+}
+fun View.Enable(){
+  this.isEnabled = true
+}
 
 fun View.addRipple() = with(TypedValue()) {
   context.theme.resolveAttribute(R.attr.selectableItemBackground , this , true)

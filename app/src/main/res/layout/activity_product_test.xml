@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.ProductTest">
+
+   <!-- <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentcontainerview"
+        android:name="smartnbuyer.smartnbuyers.com.frag.HomeFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:progress="0"
+        android:progressBackgroundTint="?android:attr/statusBarColor"
+        android:progressTint="?android:attr/textColor"
+        app:layout_constraintBottom_toTopOf="@+id/cardView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="?android:attr/statusBarColor"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/d8">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipback"
+                style="@style/Widget.Material3.Chip.Assist.Elevated"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:text="Back"
+                android:textAlignment="center"
+                app:chipBackgroundColor="?android:attr/windowBackground"
+                app:chipIconTint="@color/amber_50"
+                app:closeIconEnabled="false"
+                app:closeIconVisible="false"
+                app:rippleColor="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/currentstep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipnext"
+                style="@style/Widget.Material3.Chip.Assist.Elevated"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:text="Next"
+                android:textAlignment="center"
+                app:chipBackgroundColor="?android:attr/windowBackground"
+                app:closeIconEnabled="false"
+                app:closeIconTint="@color/amber_50"
+                app:closeIconVisible="false"
+                app:rippleColor="?attr/colorPrimary" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

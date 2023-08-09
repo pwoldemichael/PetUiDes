@@ -8,6 +8,7 @@ import pet.ui.des.com.acts.MenusActivity
 import pet.ui.des.com.acts.menus.bottomnavs.MainBottomAppBarActivity
 import pet.ui.des.com.acts.menus.bottomnavs.MainBottomNavActivity
 import pet.ui.des.com.acts.menus.drawer.MainDrawerActivity
+import pet.ui.des.com.test.ProductTest
 
 /**
  * copyright Pi Softwares
@@ -27,6 +28,7 @@ class Starter(private val CLASS : Class<*>) {
     val DYNAMIC = Starter(DynamicActivity::class.java)
     val BOTTOMNAV = Starter(MainBottomNavActivity::class.java)
     val BOTTOMAPPBAR = Starter(MainBottomAppBarActivity::class.java)
+    val TEST = Starter(ProductTest::class.java)
   }
 
   fun setBundle(bundle : Map<String , String> = hashMapOf()) : Starter {

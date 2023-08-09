@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PetUiDes"
         tools:targetApi="31">
         <activity
+            android:name=".test.ProductTest"
+            android:exported="false" />
+        <activity
             android:name=".acts.menus.bottomnavs.MainBottomAppBarActivity"
             android:exported="false"
             android:label="@string/title_activity_main_bottom_app_bar" />

@@ -3,6 +3,7 @@ package pet.ui.des.com
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import pet.ui.des.com.Starter.Companion.DYNAMIC
 import pet.ui.des.com.Starter.Companion.MENUS
+import pet.ui.des.com.Starter.Companion.TEST
 import pet.ui.des.com.bottomsheets.RecyclerSettings
 import pet.ui.des.com.databinding.ActivityMainBinding
 import pet.ui.des.com.helpers.RecyclerHelper
@@ -25,6 +26,11 @@ class MainActivity : BaseActivity() {
   private val recyclerHelper : RecyclerHelper by lazy { RecyclerHelper(this , binding.recycler , menuLayoutList) }
 
   override fun initializeActivity() {
+
+    TEST.start(this)
+    return
+
+
     binding.recsetting.setOnClickListener {
       RecyclerSettings(this@MainActivity){
         recyclerHelper.update(it)
